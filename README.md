@@ -8,5 +8,7 @@ npm install
 
 Uruchomienie (ze wszystkimi taskami) - gulp
 
+Otworzenie pliku index.html w przeglądarce
+
 
 
