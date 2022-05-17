@@ -1,0 +1,398 @@
+.section{
+    box-sizing: border-box;
+    &-features{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 100px 0 100px 0;
+        & img{
+            display: block;
+            margin: 20px;
+        }
+        &-content{
+            color: #4F5665;
+            width: 430px;
+
+            & p{
+                margin: 0;
+                display: flex;
+                & img{
+                    display: block;
+                    padding: 0 15px 25px 0;
+                    margin: 0;
+                }
+                &:nth-child(1){
+                    font-weight: 500;
+                    font-size: 35px;
+                    line-height: 50px;
+                    color: #0B132A
+                }
+                &:nth-child(2){
+                    padding: 20px 0 25px 0;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #4F5665;
+                }
+            }
+        }
+    }
+    &-plan{
+        padding: 0 0 150px 0;
+        box-sizing: border-box;
+        // height: 100vh;
+        width: 100%;
+        &-desc p{
+            text-align: center;
+            &:nth-child(1){
+                margin: 0 auto;
+                padding: 80px 0 20px 0;
+                font-weight: 500;
+                font-size: 35px;
+            }
+            &:nth-child(2){
+                line-height: 30px;
+                margin: auto;
+                width: 500px;
+                padding: 0;
+                font-size: 16px;
+            }
+        }
+        &-cards{
+            box-sizing: border-box;
+            display: flex;
+            height: 760px;
+            align-items: center;
+            justify-content: space-evenly;
+            max-height: 100%;
+            width: 100%;
+            margin: 60px 0 0 0;
+            &-card{
+                position: relative;
+                padding: 0;
+                display: block;
+                border: 2px solid #DDDDDD;
+                box-sizing: border-box;
+                border-radius: 10px;
+                margin: 0 25px;
+                width: 330px;
+                height: 100%;
+                background-color: white;
+                &.active{
+                    transition: .5s all ease-in-out;
+                    border: 2px solid #F53838;
+                }
+                &-image{
+                    & img{
+                        display: block;
+                        margin: 80px auto 0 auto;
+                    }
+                    & p{
+                        margin: 30px auto;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: #0B132A;
+                    }
+                }
+                &-desc{
+                    width: max-content;
+                    margin: 0 auto;
+                    & p{
+                        padding: 5px 0;
+                        display: flex;
+                        align-items: center;
+                        height: 30px;
+                        margin: 0 auto;
+                        font-size: 16px;
+                        & img{
+                            padding: 0 25px 0 0;
+                        }
+                    }
+                }
+                &-select{
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    text-align: center;
+                    padding: 0 0 50px 0;
+                    & p{
+                        color: #0B132A;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+    &-map{
+        box-sizing: border-box;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        & p{
+            margin: auto;
+            &:nth-child(1){
+                padding: 0 0 20px 0;
+                font-weight: 500;
+                font-size: 35px;
+                line-height: 50px;
+                color: #0B132A;
+            }
+            &:nth-child(2){
+                padding: 0 0 150px 0;
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+        &img{
+            display: block;
+            margin: auto;
+        }
+    }
+    &-slider{
+        &-desc{
+            margin-right: 150px;
+            box-sizing: border-box;
+            & p{
+               text-align: center;
+               &:nth-child(1){
+                font-weight: 500;
+                font-size: 35px;
+                line-height: 50px;
+                color: #0B132A;
+               }
+               &:nth-child(2){
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+                color: #4F5665;
+               }
+            }
+        }
+    }
+}
+
+.platforms{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & img{
+        display: block;
+    }
+}
+
+@media (max-width: 1440px){
+    .section{
+        &-plan{
+            padding: 0 0 70px 0;
+                &-desc{
+                    padding: 0;
+                    & p:nth-child(1){
+                        padding: 50px 0 15px 0;
+                    }
+                    & p:nth-child(2){
+                        line-height: 20px;
+                    }
+            }
+        }
+        &-map{
+            & p:nth-child(1){
+                padding: 20px 0 15px 0;
+            }
+            & p:nth-child(2){
+                line-height: 20px;
+                padding: 0 0 70px 0;
+            }
+            & img{
+                padding: 0;
+                margin: 0;
+            }
+        }
+        &-slider{
+            &-desc{
+                margin-right: 50px;
+                & p:nth-child(1){
+                    padding: 20px 0 15px 0;
+                    margin: 0;
+                }
+                & p:nth-child(2){
+                    line-height: 20px;
+                    padding: 0 0 30px 0;
+                }
+            }
+        }
+    }
+    .platforms{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 1024px){
+    .section{
+        &-features{
+            &-content{
+                text-align: left;
+            }
+            & img{
+                display: none;
+            }
+        }
+        &-slider{
+            &-desc{
+                padding: 20px 0 0 0;
+            }
+        }
+        &-plan{
+            &-cards{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-card{
+                    justify-content: space-between;
+                    padding: 20px 40px 20px 40px;
+                    height: fit-content;
+                    width: 100%;
+                    box-sizing: border-box;
+                    margin: 20px 0;
+                    display: flex;
+                    align-items: center;
+                    &-desc{
+                        & p{
+                            height: min-content;
+                            padding: 10px;
+                        }
+                    }
+                    &-image{
+                        margin: 0;
+                        text-align: center;
+                        padding: 0;
+                        & img{
+                            margin: 0 auto;
+                            display: block;
+                            height: 80%;
+                            width: 80%;
+                            padding: 0;
+                        }
+                        & p{
+                            text-align: center;
+                            margin: 0;
+                            padding: 10px 0;
+                        }
+                    }
+                    &-select{
+                        width: min-content;
+                        display: block;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .section{
+        &-slider{
+            height: 100%;
+            &-desc{
+                margin: 0;
+                padding: 30px 20px 0 0;
+            }
+        }
+        &-features{
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            display: block;
+                &-content{
+                    width: 100%;
+                    text-align: left;
+                }
+                & img{
+                    margin: 0;
+                }
+            }
+        &-plan{
+            &-desc{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                & p:nth-child(2){
+                    width: 100%;
+                }
+            }
+            &-cards{
+                width: 100%;
+                height: 100%;
+                &-card{
+                    width: 100%;
+                    height: 100%;
+                    text-align: left;
+                    display: flex;
+                    flex-wrap: wrap;
+                    &-image{
+                        width: 100%;
+                        display: block;
+                        box-sizing: border-box;
+                        & img{
+                            display: none;
+                        }
+                        & p{
+                            margin: 10px 0;
+                            font-size: 30px;
+                        }
+                    }
+                    &-desc{
+                        width: 50%;
+                        margin: 0 auto;
+                        box-sizing: border-box;
+                        & p{
+                            padding: 5px;
+                        }
+                    }
+                    &-select{
+                        width: 50%;
+                        margin: 10px auto 0 auto;
+                        padding: 15px 0 40px 0;
+                        & p{
+                            margin: 0 0 30px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .button-select{
+        margin: 0 auto;
+        clear: both;
+        display: block;
+    }
+}
+@media (max-width: 425px){
+    .section{
+        &-features{
+            &-content{
+                text-align: left;
+            }
+        }
+        &-plan{
+            &-cards{
+                &-card{
+                    padding: 0;
+                    display: block; 
+                    text-align: left;
+                    &-select{
+                        padding: 0 0 35px 0;
+                        & input[type='button']{
+                            width: auto;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
