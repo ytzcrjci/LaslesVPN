@@ -6,7 +6,7 @@ Instalacja paczek - npm install
 
 npm audit fix --force
 
-npm install
+npm start
 
 Uruchomienie (ze wszystkimi taskami) - gulp
 
